@@ -1,0 +1,61 @@
+<section>
+    <div class="mx-auto max-w-7xl px-8 py-12 lg:pt-24">
+        <div class="mx-auto max-w-2xl">
+            <div>
+                <div
+                    class="md:flex md:items-center md:justify-between md:space-x-5"
+                >
+                    <div class="flex items-center space-x-5">
+                        <div class="flex-shrink-0">
+                            <div class="relative">
+                                <img
+                                    alt="image"
+                                    class="rounded-full border border-white/10 h-16 lg:h-40 lg:w-40 w-16"
+                                    src="{{ portfolio_avatar }}"
+                                />
+                                <span
+                                    aria-hidden="true"
+                                    class="rounded-full absolute inset-0 shadow-inner"
+                                ></span>
+                            </div>
+                        </div>
+                        <div class="pt-1.5">
+                            <h1 class="dark:text-white text-black lg:text-xl">
+                                ✺ {{ name }}
+                            </h1>
+                            <p class="text-neutral-500 font-light text-sm">
+                                {{ designation }}
+                            </p>
+                            <p>
+                                <a
+                                    class="dark:text-white duration-200 hover:no-underline text-xs underline"
+                                    href="{{ portfolio_link }}"
+                                    target="_blank"
+                                    >{{ portfolio_text }}</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="font-light text-sm mt-24">
+                    <p class="dark:text-white text-black">About</p>
+                    <div
+                        class="text-neutral-500 dark:text-neutral-400 mt-3 space-y-3"
+                    >
+                        {{ about_me }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="mx-auto max-w-7xl px-8 py-12">
+        <div class="mx-auto max-w-2xl">
+            <div class="grid gap-12 md:gap-24">
+                {{ partial:experience }} {{ partial:contact }} {{
+                partial:latestBlog }}
+            </div>
+        </div>
+    </div>
+</section>

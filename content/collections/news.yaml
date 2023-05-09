@@ -1,0 +1,17 @@
+title: news
+template: news/show
+layout: layout
+mount: c87eb399-cc14-4de9-8fc4-17b1aa6f66f8
+taxonomies:
+  - category
+revisions: false
+route: '/{mount}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

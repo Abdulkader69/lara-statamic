@@ -1,0 +1,7 @@
+<div class="font-light text-sm">
+    <p class="dark:text-white text-black">Latest Blog</p>
+    <div class="grid gap-10 md:grid-cols-2 lg:gap-10 mt-3">
+        {{ collection:news limit="2" sort="date:desc" }} {{ partial:news/card }}
+        {{ /collection:news }}
+    </div>
+</div>

@@ -1,0 +1,155 @@
+<div class="py-5 lg:py-20">
+    <div
+        class="container px-8 mx-auto xl:px-5 max-w-screen-lg py-5 lg:py-8 !pt-0"
+    >
+        <div class="mx-auto max-w-screen-md">
+            <div class="flex justify-center">
+                <div class="flex gap-3">
+                    {{ category }}
+                    <a href="{{ url }}"
+                        ><span
+                            class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-blue-600"
+                            >{{ title }}</span
+                        ></a
+                    >
+                    {{ /category }}
+                </div>
+            </div>
+            <h1
+                class="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug"
+            >
+                {{ title }}
+            </h1>
+            <div class="mt-3 flex justify-center space-x-3 text-gray-500">
+                <div class="flex items-center gap-3">
+                    <div class="relative h-10 w-10 flex-shrink-0">
+                        <a href="/author/mario-sanchez"
+                            ><img
+                                alt="Mario Sanchez"
+                                loading="lazy"
+                                decoding="async"
+                                data-nimg="fill"
+                                class="rounded-full object-cover"
+                                sizes="40px"
+                                src="{{ author:avatar }}"
+                                style="
+                                    position: absolute;
+                                    height: 100%;
+                                    width: 100%;
+                                    inset: 0px;
+                                    color: transparent;
+                                "
+                        /></a>
+                    </div>
+                    <div>
+                        <p class="text-gray-800 dark:text-gray-400">
+                            <a href="/author/mario-sanchez"
+                                >{{ author:name }}</a
+                            >
+                        </p>
+                        <div class="flex items-center space-x-2 text-sm">
+                            <time
+                                class="text-gray-500 dark:text-gray-400"
+                                datetime="2022-10-21T15:48:00.000Z"
+                                >{{ date }}</time
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="relative z-0 mx-auto aspect-video max-w-screen-lg overflow-hidden lg:rounded-lg"
+    >
+        <img
+            alt="Thumbnail"
+            loading="eager"
+            decoding="async"
+            data-nimg="fill"
+            class="object-cover"
+            sizes="100vw"
+            src="{{ featured_image }}"
+            style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                inset: 0px;
+                color: transparent;
+            "
+        />
+    </div>
+    <div class="container px-8 mx-auto xl:px-5 max-w-screen-lg py-5 lg:py-8">
+        <article class="mx-auto max-w-screen-md">
+            <div
+                class="prose mx-auto my-3 dark:prose-invert prose-a:text-blue-600"
+            >
+                {{ news_content }}
+            </div>
+            <div class="mb-7 mt-7 flex justify-center">
+                <a
+                    class="bg-brand-secondary/20 rounded-full px-5 py-2 text-sm text-blue-600 dark:text-blue-500"
+                    href="/news"
+                    >← View all posts</a
+                >
+            </div>
+            <div
+                class="mt-3 rounded-2xl bg-gray-50 px-8 py-8 text-gray-500 dark:bg-gray-900 dark:text-gray-400"
+            >
+                <div
+                    class="flex flex-wrap items-start sm:flex-nowrap sm:space-x-6"
+                >
+                    <div class="relative mt-1 h-24 w-24 flex-shrink-0">
+                        <a href="/author/mario-sanchez"
+                            ><img
+                                alt="Mario Sanchez"
+                                loading="lazy"
+                                decoding="async"
+                                data-nimg="fill"
+                                class="rounded-full object-cover"
+                                sizes="96px"
+                                src="{{ author:avatar }}"
+                                style="
+                                    position: absolute;
+                                    height: 100%;
+                                    width: 100%;
+                                    inset: 0px;
+                                    color: transparent;
+                                "
+                        /></a>
+                    </div>
+                    <div>
+                        <div class="mb-3">
+                            <h3
+                                class="text-lg font-medium text-gray-800 dark:text-gray-300"
+                            >
+                                {{ author:name }}
+                            </h3>
+                        </div>
+                        <div>
+                            <p>
+                                Mario is a Staff Engineer specialising in
+                                Frontend at
+                                <a
+                                    href="https://github.com/Abdulkader69"
+                                    rel="noopener"
+                                    target="_blank"
+                                    >Vercel</a
+                                >, as well as being a co-founder of Acme and the
+                                content management system Sanity. Prior to this,
+                                he was a Senior Engineer at Apple.
+                            </p>
+                        </div>
+                        <div class="mt-3">
+                            <a
+                                class="bg-brand-secondary/20 rounded-full py-2 text-sm text-blue-600 dark:text-blue-500"
+                                href="/author/mario-sanchez"
+                                >View Profile</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>

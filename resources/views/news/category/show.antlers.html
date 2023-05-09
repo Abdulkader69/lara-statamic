@@ -1,0 +1,8 @@
+<div class="w-full max-w-7xl m-auto py-20">
+    <h3 class="text-xl font-bold text-center mb-5">Category</h3>
+    <h1 class="mb-20 text-4xl font-bold text-center">{{ title }}</h1>
+    <div class="grid gap-10 md:grid-cols-3 lg:gap-10">
+        {{ entries }} {{ partial:news/card hide_category='true' }} {{ /entries
+        }}
+    </div>
+</div>
